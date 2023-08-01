@@ -1,323 +1,295 @@
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth
-};
-body{
-    background-color: black;
-    color: white;
-}
-
-.rectangle{
-    position: relative;
-    background: url(img/banner.png);
-    background-color: #4d4d4d;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 1000%;
-}
-.rectangle p{
-    padding-top: 208px;
-    padding-left: 100px;
-    color: #ffffff;
-    font-family: 'Staatliches', cursive;
-    font-style: oblique;
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 94px;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-.rectangle p span{
-    color: #96FC58;
-}
-.side{
-    background-color: #C5253C;
-    width: 60px;
-    height: 320px;
-    float: right;
-}
-.side .fa-brands{
-    color: #ffffff;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 10%;
-    padding-left: 30%;
-}
-
-.rectangle section{
-    background-color: rgb(12, 12, 12);
-    margin-top: 21.5%;
-
-}
-#prodigy{
-    margin-left: 20%;
-    position: absolute;
-    text-align: justify;
-    font-family: 'Staatliches';
-    font-style: normal;
-    font-weight: 400;
-    font-style: oblique;
-    font-size: 100px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 0.1;
-}
-.overlay{
-    font-family: Staatliches;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 94px;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-.overlay span{
-    color: #96FC58;
-}
-#home-text{
-position: absolute;
-margin-left: 16%;
-margin-right: 16%;
-margin-top: 30px;
-font-family: 'Montserrat';
-font-size: 24px;
-text-align: justify;
-color: #FFFFFF;
-}
-.read-more button{
-    --purple: #96FC58;
-    width: 150px;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* margin-bottom: 0px; */
+    height: 70px;
+    background-color: #282828;
+    z-index: 100;
+   
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo1 {
     height: 50px;
-    padding: 0.8em 3em;
-    position: relative;
-    margin-bottom: 20px;
-    transition: all 0.3s;
-    line-height: 1.4em;
-    cursor: pointer;
-    margin-left: 40%;
-    background-color: transparent;
-    color: #96FC58;
-    border: 1px solid var(--purple);
-    box-shadow: 0 0 10px #96FC58;  
-}
-/* How it works */
-.how{
+    margin-left: 80px;
+    margin-right: 20px;
+  }
+  
+  .title {
+      width: 165px;
+      left: 191px;
+      top: 4px;
+      color: white;
+      font-size: 24px;
+      font-family: Staatliches;
+      font-weight: 400;
+      text-transform: uppercase;
+      word-wrap: break-word;
+  }
+  
+  .middle-section {
+    flex: 1;
+    margin-left: 420px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .middle{
+      width: 100%; 
+      height: 100%; 
+      justify-content: flex-start; 
+      align-items: center; 
+      gap: 4px; 
+      display: inline-flex
+  }
+  
+  
+  .flag {
+      width: 24px; 
+      height: 20px; 
+      border-radius: 2px
+    
+  }
+  
+  .country {
+      text-align: right;
+      color: white;
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 500;
+      line-height: 16px;
+      word-wrap: break-word;
+  }
+  
+  .right-section {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 80px ;
+    flex-shrink: 0;
+  }
+  
+  .sign-in-text {
+      color: black; 
+      font-size: 14px; 
+      font-family: Montserrat; 
+      font-weight: 700; 
+      word-wrap: break-word
+  }
+  
+  
+  .sign-up-text {
+      color: black; 
+      font-size: 14px; 
+      font-family: Montserrat; 
+      font-weight: 700; 
+      word-wrap: break-word
+  }
+  
+  .sign-in, .sign-up {
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      display: flex;
+      word-wrap: break-word;
+  }
+  
+  .sign-in {
+      background: white;
+      border: 0.5px #ebeaea solid;
+      color: black;
+  }
+  
+  .sign-up {
+      background: #c5253c;
+      color: white;
+  }
+  
+  .nav-bar {
     background-color: black;
-    color: #ffffff;
-}
-.how h3{
-    font-family: 'Staatliches', cursive;
-    font-style: oblique;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 94px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    padding-top: 40px;
-}
-.how h3 span{
-    color: #96FC58;
-}
-.how p{
-    font-family: Montserrat;
+    height: 70px;
+    color: white;
+    margin-top: 70px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /* z-index: 100; */
+  }
+  
+  .navigation {
+    width: 100%; 
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    
+  }
+  
+  .nav-item {
     font-size: 18px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: center;
-
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-left: 40px;
-}
-.grid-item {
-    background-color:#141414;
-    text-align: center;
-    width: 370px;
-    height: 250px;
-    border-radius: 16px;
-    margin-top: 50px;
-}
-.one{
-    background-color: #C5253C;
-    width: 30px;
-    height: 20px;
-    margin-left: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
     font-family: Montserrat;
-    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #DFDDDD;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center; 
+  }
+  
+  .nav-item:first-child {
+    width: 60px;
     font-weight: 700;
-    text-align: left;
-}
-.grid-item h4{
-    font-family: 'Staatliches', cursive;
-    font-size: 24px;
-    font-weight: bold;
-    font-style: oblique;
-    line-height: 31px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin: 10px;
-    padding-left: 12px;
-    margin-top: 15px;
-}
-.how h4 span{
-    color: #96FC58;
-}
-.grid-item p{
-    margin: 10px;
-    padding-top: 25px;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.connect{
-    position: static;
-    background-image: url(img/connect.png);
-    background-repeat: no-repeat;
-    height: 548px;
-    width: 100%;
-    background-size: cover;
-    text-align: center;
-    background-color: #4d4d4d;
-    background-blend-mode: overlay;
-    color: #ffffff;
-    margin-top: 5%;
-}
-.connect h2{
-    padding-top: 6%;
-    font-family: 'Staatliches', cursive;
-    font-size: 50px;
-    font-style: oblique;
-    line-height: 31px;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-.connect button{
-    margin-top: 95px;
-    padding: 12px;
-    width: 100px;
-    border: 0px;
-    font-weight: bold;
-}
-.connect a{
-    padding-left: 10px;
-}
-/* Athletes of the week*/
-.athlete h2{
-    padding-top: 6%;
-    font-family: 'Staatliches', cursive;
-    font-size: 50px;
-    font-style: oblique;
-    line-height: 31px;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-.athlete h2 span{
-    color: #96FC58;
-}
-.athlete .grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-left: 10%;
-}
-.athlete .grid-item{
-    background-color:#141414;
-    width: 510px;
-    height: 650px;
-    border-radius: 0;  
-    text-align: center;
-    margin-top: 50px;
-}
-.grid-back{
-    background: url(img/rayan.png);
-    background-color: #4d4d4d;
-    background-blend-mode: overlay;
-    width: 510px;
-    height : 352px;
-    border-radius:5px;
-}
-.grid-back .fa-regular{
-    float: right;
-    margin-right: 10px;
-    margin-top: 20px;
-}
-.text{
-    margin-top: 35%;
-}
-.grid-item li{
-    margin-left: 40px;
-    text-align: left;
-}
-.grid-item a{
+  }
+  .nav-item a{
     text-decoration: none;
-    background-color: #C5253C;
-    color: #ffffff;
-    padding: 10px;
-    width: 200px;
-    border: 0px;
-}
-.chevron button {
-  --purple: #96FC58;
-  width: 150px;
-  padding: 0.8em 3em;
-  position: relative;
-  transition: all 0.3s;
-  line-height: 1.4em;
-  background-color: #000;
-  border: 1px solid var(--purple);
-  box-shadow: 0 0 10px #96FC58;
-}
-.left{
-    float: left;
+    color: #fff;
+  }
+    .nav-item .active{
     color: #96FC58;
-    margin-left:10%;
-    margin-top:30px;
-}
-.right{
-    float: right;
-    color: #96FC58;
-    float: right;
-    margin-right:8%;
-    margin-top: 30px;
+    }
+  .icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  
+  .icon-item {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+  }
+  
+  /* .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: black;
 }
 
-/* FAQS */
-
-.faq h1{
-    margin-top: 10%;
-    font-family: Staatliches;
-    font-size: 72px;
+.follow-athlete-zone {
+    left: 1156px;
+    top: 92px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+    opacity: 0.80;
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
     font-weight: 400;
-    line-height: 94px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    font-style: oblique;
-    color: #ffffff;
+    word-wrap: break-word;
 }
-.faq p{
-    text-align: left;
-    margin-left: 20%;
+
+.social-icons {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    display: inline-flex;
 }
-.faq .fa-regular{
-    float: right;
-    margin-right: 29%;
+
+.icon-container {
+    width: 32px;
+    height: 32px;
+    position: relative;
 }
-hr{
-    width: 775px;
-    margin-left: 20%;
-    margin-top: 30px;
+
+.icon-container img {
+    width: 21.33px;
+    height: 21.34px;
+    left: 5.33px;
+    top: 5.33px;
+    position: absolute;
 }
-.hidden-text{
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 28.5%;
-    margin-top: 2%;
+
+.white-rectangle {
+    width: 26.67px;
+    height: 21.33px;
+    left: 2.67px;
+    top: 5.33px;
+    position: absolute;
+    background: white;
 }
+
+.logo {
+    width: 231px;
+    height: 72px;
+    left: 125px;
+    top: 0px;
+    position: absolute;
+}
+
+.logo-text {
+    width: 165px;
+    left: 66px;
+    top: 0px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Staatliches;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 72px;
+    word-wrap: break-word;
+}
+
+.logo img {
+    width: 48px;
+    height: 58.50px;
+    left: 0px;
+    top: 7px;
+    position: absolute;
+}
+
+.nav {
+    left: 125px;
+    top: 92px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex;
+}
+
+.navi {
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.footer {
+    width: 224px;
+    height: 14px;
+    left: 125px;
+    top: 140px;
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+} */
